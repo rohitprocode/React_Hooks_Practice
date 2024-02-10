@@ -14,7 +14,7 @@ function UseStateHook() {
             return {...previousData , color : 'Blue '}
         })
     }
-
+    
   return (
     <div>
       <h1 style={{color: "purple"}}>useState Hook</h1>
