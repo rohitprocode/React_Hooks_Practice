@@ -17,7 +17,7 @@ function UseStateHook() {
     
   return (
     <div>
-      <h1 style={{color: "purple"}}>useState Hook</h1>
+      <h1>useState Hook</h1>
       <p>The React useState Hook allow us to track state in function component.</p>
         <h3>My Name is : {name}</h3>
         <input type="text" placeholder='Change Digit' onChange={(e)=>setName(e.target.value)} />

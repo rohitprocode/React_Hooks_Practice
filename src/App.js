@@ -7,7 +7,10 @@ function App() {
   return (
     <div className="App">
       <h1>Practice of Hooks</h1>
-      {/* <UseStateHook/> */}
+      <hr />
+      <UseStateHook/>
+      <br />
+      <hr />
       <UseEffectHook/>
     </div>
   );
