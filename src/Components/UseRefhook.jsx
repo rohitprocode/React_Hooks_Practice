@@ -13,7 +13,7 @@ function UseRefhook() {
 
     const Counter = () =>{
         setCount(Count + 5)
-        console.log("State Updated")
+        console.log(` State Updated Count: ${Count} `)
     }
   return (
     <div>

@@ -4,6 +4,7 @@ import UseStateHook from './Components/UseStateHook';
 import UseEffectHook from './Components/UseEffectHook';
 import UseRefhook from './Components/UseRefhook';
 import Component1 from './Components/Component1';
+import UseReducerHook from './Components/UseReducerHook';
  
 const FirstName = createContext()
 const LastName = createContext()
@@ -14,7 +15,7 @@ function App() {
     <div className="App">
       <h1>Practice of Hooks</h1>
       <hr />
-      <UseStateHook/>
+      {/* <UseStateHook/>
       <br />
       <hr />
       <UseEffectHook/>
@@ -27,7 +28,10 @@ function App() {
       <Component1/>
       </Age.Provider>
       </LastName.Provider>
-      </FirstName.Provider>
+      </FirstName.Provider> */}
+      <br />
+      <hr />
+      <UseReducerHook/>
     </div>
   );
 }
