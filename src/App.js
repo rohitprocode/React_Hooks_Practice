@@ -5,6 +5,7 @@ import UseEffectHook from './Components/UseEffectHook';
 import UseRefhook from './Components/UseRefhook';
 import Component1 from './Components/Component1';
 import UseReducerHook from './Components/UseReducerHook';
+import UseMemoHook from './Components/UseMemoHook';
  
 const FirstName = createContext()
 const LastName = createContext()
@@ -28,10 +29,13 @@ function App() {
       <Component1/>
       </Age.Provider>
       </LastName.Provider>
-      </FirstName.Provider> */}
+      </FirstName.Provider>
       <br />
       <hr />
-      <UseReducerHook/>
+      <UseReducerHook/> */}
+      <br />
+      <hr />
+      <UseMemoHook/>
     </div>
   );
 }

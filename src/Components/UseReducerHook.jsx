@@ -50,7 +50,13 @@ function UseReducerHook() {
   // const [Counter,setCounter] = useState(100)
   return (
     <div>
-      <h1>Counter : {state}</h1>
+      <h1>This is a useReducer hook</h1>
+      <p>The <strong>useReducer hook</strong> is similar to the useState hook.It allows for custom state logic.The useReducer is used in react for managing complex state logic in functional components.It is an alternative to the 'useState' hook.It is particularly beneficial in the Complex state logic, Predictable state updates, Performance optimization, Sharing state logic, Middleware and side effects. <br /> useReducer provides a more flexible and powerful approach to managing state in react applications,particularly when dealing with complex state logic or when sharing state between multiple components.  </p>
+      <pre>
+        The useReducer accepts two arguments : <br />
+        useReducer(&lt;reducer&gt; , &lt;initialState&gt; )
+      </pre>
+      <h2>Counter : {state}</h2>
       <button
         onClick={() => {
           dispatch({ type: "Increment" });
