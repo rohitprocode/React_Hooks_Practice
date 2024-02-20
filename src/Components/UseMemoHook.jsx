@@ -1,17 +1,20 @@
-import React, { useMemo, useRef, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { InitialItems } from "./SelectedItemUseMemo";
 
 function UseMemoHook() {
   const [Counter, setCounter] = useState(100);
-  const [items] = useState(InitialItems);
+  const [numbers] = useState(InitialItems);
 
   const IncreFunc = () => {
     setCounter(Counter + 1);
   };
 
-  const selectedItem = useMemo(() => items.find((item) => item.isSelected), [items]);
+  const SelectedItems = useMemo(() => {
+   return numbers.find((item) => item.isSelected);
+  },[numbers]);
 
   console.log("Component Rendered");
+
   return (
     <div>
       <h1>This is a useMemo Hook</h1>
@@ -22,7 +25,7 @@ function UseMemoHook() {
       </p>
       <h2>{Counter}</h2>
       <button onClick={IncreFunc}>Increment</button>
-      <h1>Selected Item:{selectedItem?.id}</h1>
+      <h1>Selected Items : {SelectedItems?.id}</h1>
     </div>
   );
 }
