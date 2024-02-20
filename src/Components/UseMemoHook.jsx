@@ -19,7 +19,7 @@ function UseMemoHook() {
     <div>
       <h1>This is a useMemo Hook</h1>
       <p>
-        <strong>useMemo</strong> is a react hook that memoizes a value and
+        <strong>useMemo</strong> is a react hook that <mark>"caches"</mark> a value and
         returns the same value until any of the dependencies in the dependency
         array changes,until then it will recompute a new value.
       </p>
